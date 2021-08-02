@@ -77,5 +77,5 @@ sudo vi /etc/fstab
 
 ```
 ```
-reboot
+sudo reboot
 ```
