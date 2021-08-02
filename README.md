@@ -56,3 +56,6 @@ systemctl status qbittorrent-nox
 
 *1. 访问 http://ip:8080 默认用户名:admin 密码:adminadmin
 *2. 进入 设置->webui 更改登录用户名密码 sesame：password
+
+**设置nfs 挂载
+
