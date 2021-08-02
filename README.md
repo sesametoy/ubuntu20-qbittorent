@@ -64,6 +64,15 @@ sudo apt install nfs-common
 ```
 *新建目录
 ```
-sudo mkdir /mnt/movie /mnt/tv /mnt/action
+sudo mkdir /mnt/movie /mnt/tv /mnt/action /mnt/seeds
 ```
+* 设置启动挂载
+```
+sudo vi /etc/fstab
 
+192.168.1.XX:/Home30T/30TZFS/Video/Movie /mnt/movie nfs auto,hard,noatime,nolock,intr,tcp,actimeo=1800 0 0
+192.168.1.XX:/Home30T/30TZFS/Video/TV_Series /mnt/tv nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
+192.168.1.XX:/Home30T/30TZFS/Download/Action /mnt/action nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
+192.168.1.XX:/Home30T/30TZFS/Download/seeds /mnt/seeds nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
+
+```
