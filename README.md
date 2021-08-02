@@ -76,3 +76,6 @@ sudo vi /etc/fstab
 192.168.1.XX:/Home30T/30TZFS/Download/seeds /mnt/seeds nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
 
 ```
+```
+reboot
+```
