@@ -1,4 +1,4 @@
-* 安装Ubuntu20.04 server (exsi)
+** 安装Ubuntu20.04 server (exsi)
 ```
 apt update
 apt-get upgrade
@@ -58,4 +58,12 @@ systemctl status qbittorrent-nox
 *2. 进入 设置->webui 更改登录用户名密码 sesame：password
 
 **设置nfs 挂载
+*安装nfs服务 
+```
+sudo apt install nfs-common
+```
+*新建目录
+```
+sudo mkdir /mnt/movie /mnt/tv /mnt/action
+```
 
